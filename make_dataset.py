@@ -110,8 +110,8 @@ def split_dataset(url_file,outfile):
 if __name__ == '__main__':
     if args.worker_num == 1 and cpu_count() > 1:
         print('Your device has %d CPUs, you could speed up by setting -work_num' % (cpu_count()))
-    #if not os.path.exists(args.tokenized_stories_dir) : os.makedirs(args.tokenized_stories_dir)
-    #tokenize_stories(args.stories_dir, args.tokenized_stories_dir)
+    if not os.path.exists(args.tokenized_stories_dir) : os.makedirs(args.tokenized_stories_dir)
+    tokenize_stories(args.stories_dir, args.tokenized_stories_dir)
     print('Start splitting dataset')
     split_dataset(args.train_urls,os.path.join(args.output_dir,'train.json'))
     split_dataset(args.test_urls,os.path.join(args.output_dir,'test.json'))

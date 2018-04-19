@@ -9,6 +9,7 @@ A script to produce non-anonymized CNN and DailyMail for summary. **Reference**:
 + tokenized by CoreNLP
 + non-anonymized
 + lowercase
++ remove artical infomation
 + multiprocess
 + json(more readable)
 

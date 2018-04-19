@@ -1,10 +1,10 @@
 A script to produce non-anonymized CNN and DailyMail for summary. **Reference**: [abisee/cnn-daulymail](https://github.com/abisee/cnn-dailymail)
 
-### Environment
+## Environment
 
 + python 3.6
 
-### Features
+## Features
 
 + tokenized by CoreNLP
 + non-anonymized
@@ -12,13 +12,13 @@ A script to produce non-anonymized CNN and DailyMail for summary. **Reference**:
 + multiprocess
 + json(more readable)
 
-### How to use it?
+## How to use it?
 
-#### Download data
+#### 1. Download data
 
 Download the stories directories from [here](https://cs.nyu.edu/~kcho/DMQA/) for both CNN and Daily Mail.
 
-#### Download CoreNLP
+#### 2. Download CoreNLP
 
 Download and unzip CoreNLP from [here](https://stanfordnlp.github.io/CoreNLP/). Add the following command in your bash_profile:  
 
@@ -26,7 +26,7 @@ Download and unzip CoreNLP from [here](https://stanfordnlp.github.io/CoreNLP/). 
 export CLASSPATH=$CLASSPATH:/path/to/stanfordnlp-corenlp-full-2018-02-27/stanford-corenlp-3.9.1.jar
 
 ```
-#### Make dataset
+#### 3. Make dataset
 
 ```bash
 

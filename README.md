@@ -34,6 +34,7 @@ export CLASSPATH=$CLASSPATH:/path/to/stanfordnlp-corenlp-full-2018-02-27/stanfor
 # for dailymail(similar for cnn)
 # if your device has multiple CPUs, you could speed up by setting -worker_num
 
-python make_dataset.py -stories_dir dailymail/stories -tokenized_storeis_dir dailymail/tokenized_stories -train_urls url_lists/dailymail_wayback_training_urls.txt -test_urls url_lists/dailymail_wayback_test_urls.txt -val_urls url_lists/dailymail_wayback_validation_urls.txt -output_dir dailymail 
+python make_dataset.py -stories_dir dailymail/stories -tokenized_stories_dir dailymail/tokenized_stories -train_urls url_lists/dailymail_wayback_training_urls.txt -test_urls url_lists/dailymail_wayback_test_urls.txt -val_urls url_lists/dailymail_wayback_validation_urls.txt -output_dir dailymail 
+python make_dataset.py -stories_dir cnn/stories -tokenized_stories_dir cnn/tokenized_stories -train_urls url_lists/cnn_wayback_training_urls.txt -test_urls url_lists/cnn_wayback_test_urls.txt -val_urls url_lists/cnn_wayback_validation_urls.txt -output_dir cnn
 
 ```
